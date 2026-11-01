@@ -1,0 +1,11 @@
+services:
+  website:
+    build: .
+    container_name: jaipur
+    ports:
+      - "8080:80"
+    volumes:
+      - jaipur-logs:/var/log/nginx
+
+volumes:
+  jaipur-logs:
